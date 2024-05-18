@@ -517,7 +517,22 @@ nav {
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
+
+
+
+.nav-item {
+        font-size: 3vh; /* Larger font size for better readability on small screens */
+        padding: 2vh 4vw; /* Adjust padding for better touch targets */
+    }
+
+    .nav-item:hover {
+        transform: scale(1.1); /* Smaller scale on mobile to prevent distortion */
+        padding: 2.5vh 5vw; /* Adjust padding on hover */
+        font-size: 3.5vh; /* Adjust font size on hover */
+    }
+
+
   .skills {
     display: flex;
     flex-direction: column;
